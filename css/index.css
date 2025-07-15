@@ -1,0 +1,78 @@
+ /* style.css */
+
+ /* style.css */
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* título arriba, precio abajo */
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Ajuste responsive: en pantallas pequeñas, baja la altura de la imagen */
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
+.footer {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: #f0e6d2;
+  padding: 40px 20px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.7);
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #ff8c42; /* naranja cálido */
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.footer-section ul li a {
+  color: #f0e6d2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff8c42;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+  font-size: 13px;
+  color: #d1cbb7;
+  border-top: 1px solid rgba(255, 140, 66, 0.3);
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
