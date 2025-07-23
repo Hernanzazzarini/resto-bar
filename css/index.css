@@ -67,6 +67,48 @@
   margin-top: 30px;
 }
 
+.footer-section.links {
+  background-image: url('../img/logo\ admin.png');
+
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-section.links {
+  background-image: url('../img/imagen\ front.png'); /* o reemplazalo por cerveza.png, pizza.jpeg, etc. */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Capa oscura para que se lea el texto */
+.footer-section.links::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajustá el nivel de oscuridad si querés */
+  z-index: 0;
+}
+
+/* Asegura que el texto esté encima del fondo */
+.footer-section.links * {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+
+
+
 
 
 
