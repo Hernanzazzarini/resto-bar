@@ -1,7 +1,4 @@
- /* style.css */
-
- /* style.css */
-
+ /* Imágenes de las cards */
 .card-img-top {
   width: 100%;
   height: 200px;
@@ -9,6 +6,7 @@
   object-position: center;
 }
 
+/* Cards */
 .card {
   height: 100%;
   display: flex;
@@ -19,19 +17,22 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* título arriba, precio abajo */
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   padding: 1rem;
 }
 
-/* Ajuste responsive: en pantallas pequeñas, baja la altura de la imagen */
-
+/* Responsive: imágenes más pequeñas en móviles */
 @media (max-width: 576px) {
   .card-img-top {
     height: 150px;
   }
 }
+
+/* FOOTER */
 .footer {
+  width: 100%;
   background: linear-gradient(135deg, #4b6cb7, #182848);
   color: #f0e6d2;
   padding: 40px 20px 20px 20px;
@@ -39,9 +40,9 @@
   box-shadow: inset 0 0 50px rgba(0,0,0,0.7);
 }
 
-.footer-section h3,
-.footer-section h4 {
-  color: #ff8c42; /* naranja cálido */
+.footer h3,
+.footer h4 {
+  color: #ff8c42;
   margin-bottom: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -59,62 +60,58 @@
 }
 
 .footer-bottom {
-  text-align: center;
-  padding: 20px 10px 10px 10px;
   font-size: 13px;
   color: #d1cbb7;
   border-top: 1px solid rgba(255, 140, 66, 0.3);
-  margin-top: 30px;
+  padding-top: 10px;
 }
 
+/* Fondo con imagen para sección de enlaces rápidos */
 .footer-section.links {
-  background-image: url('../img/logo\ admin.png');
-
+  background-image: url('../img/imagen front.png'); /* Asegurate que exista */
   background-size: cover;
   background-position: center;
   padding: 20px;
   border-radius: 10px;
-  color: white;
   position: relative;
   overflow: hidden;
 }
 
-.footer-section.links {
-  background-image: url('../img/imagen\ front.png'); /* o reemplazalo por cerveza.png, pizza.jpeg, etc. */
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Capa oscura para que se lea el texto */
+/* Capa oscura sobre la imagen */
 .footer-section.links::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Ajustá el nivel de oscuridad si querés */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
-/* Asegura que el texto esté encima del fondo */
+/* Asegurar que el texto esté encima */
 .footer-section.links * {
   position: relative;
   z-index: 1;
   color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* Responsive Footer Layout */
+@media (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.logo-stamp {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+  
+  /* Forma "mancha" irregular */
+  clip-path: polygon(
+    25% 5%, 70% 10%, 90% 40%, 85% 85%, 60% 95%, 30% 90%, 10% 70%, 5% 30%
+  );
+}
 
