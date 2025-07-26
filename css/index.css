@@ -1,3 +1,5 @@
+ 
+ 
  /* Imágenes de las cards */
 .card-img-top {
   width: 100%;
@@ -100,18 +102,5 @@
     gap: 20px;
   }
 }
-.logo-stamp {
-  position: absolute;
-  top: -30px;
-  right: 20px;
-  width: 250px;
-  height: 200px;
-  object-fit: cover;
-  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
-  
-  /* Forma "mancha" irregular */
-  clip-path: polygon(
-    25% 5%, 70% 10%, 90% 40%, 85% 85%, 60% 95%, 30% 90%, 10% 70%, 5% 30%
-  );
-}
+
 
